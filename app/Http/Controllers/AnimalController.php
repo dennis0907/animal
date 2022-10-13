@@ -83,6 +83,7 @@ class AnimalController extends Controller
      */
     public function destroy(Animal $animal)
     {
-        //
+        $animal->delete();
+        return response(null, 204);
     }
 }
